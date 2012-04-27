@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation Title</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-widescreen template-default'>
+      
+      <!-- Following Mustache block will render the slides
+           provided in contents/slides.json based on the given properties -->
+      {{#slides}}
+      <article class="{{class}}" >
+
+      {{#slogan}}
+        <h2>{{{slogan}}}</h2>
+      {{/slogan}}
+
+      {{#slide_title}}
+        <h3>{{{slide_title}}}</h3>
+      {{/slide_title}}
+
+      {{#primary_text}}
+        <p class="primary">{{{primary_text}}}</p>
+      {{/primary_text}}
+
+      {{#image}}
+        <img src="images/{{image}}" class="centered"/>
+      {{/image}}
+
+      {{#code}}
+        <pre>{{code}}</pre> 
+      {{/code}}
+
+      {{#list}}
+        <ul class="build">
+          <li>{{{.}}}</li> 
+        </ul>
+      {{/list}}
+
+      {{#secondary_text}}
+        <p class="secondary">{{{secondary_text}}}</p>
+      {{/secondary_text}}
+
+      {{#footnote}}
+        <p class="source">{{{footnote}}}</p>
+      {{/footnote}}
+
+      {{> slide_footer }}
+
+      </article>
+      {{/slides}}
+    </section>
+
+    <script src="jquery.js"></script>
+    <script src="mustache.js"></script>
+    <script src="mustache_renderer.js"></script>
+    <script src="script.js"></script>
+
+    
+  </body>
+</html>
+

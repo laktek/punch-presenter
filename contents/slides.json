@@ -1,0 +1,54 @@
+{
+  "slides": [
+    {
+        "slogan": "Main Title of Presentation"
+    },
+
+    {
+        "slogan": "Title of the Slide" 
+      , "primary_text": "A summary or sub-title"
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "primary_text": "This is a slide with just text. This is a slide with just text. This is a slide with just text. This is a slide with just text. This is a slide with just text. This is a slide with just text." 
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "image": "cat_picture.jpg"
+      , "footnote": "http://flickr.com/as"
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "image": "cat_picture.jpg"
+      , "class": "fill" 
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "list": [
+           "An interesting item" 
+         , "Another interesting item"
+         , "Yet another interesting item"
+      ] 
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "code": "&lt;script type='text/javascript'&gt;\n  // Say hello world until the user starts questioning\n  // the meaningfulness of their existence.\n  function helloWorld(world) {\n    for (var i = 42; --i &gt;= 0;) {\n      alert('Hello ' + String(world));\n    }\n  }\n&lt;/script&gt;\n&lt;style&gt;\n  p { color: pink }\n  b { color: blue }\n  u { color: 'umber' }\n&lt;/style&gt;\n"
+    },
+
+    {
+        "slide_title": "Title of the Slide" 
+      , "code": "&lt;script type='text/javascript'&gt;\n  // Say hello world until the user starts questioning\n  // the meaningfulness of their existence.\n  function helloWorld(world) {\n    for (var i = 42; --i &gt;= 0;) {\n      alert('Hello ' + String(world));\n    }\n  }\n&lt;/script&gt;\n&lt;style&gt;\n  p { color: pink }\n  b { color: blue }\n  u { color: 'umber' }\n&lt;/style&gt;\n"
+      , "secondary_text": "This explains the code block"
+    },
+
+    {
+        "slogan": "Thank You!"
+    }
+
+  ]
+}
